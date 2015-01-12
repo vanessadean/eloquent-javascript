@@ -4,6 +4,8 @@ for (counter = 0; counter < 7; counter++) {
   string += "#";
   console.log(string);
 };
+// for (var line = "#"; line.length < 8; line += "#")
+//   console.log(line);
 
 //FizzBuzz
 for (counter = 1; counter <= 100; counter++) {
@@ -14,11 +16,7 @@ for (counter = 1; counter <= 100; counter++) {
   if (counter % 5 == 0) {
     string += "Buzz";
   };
-  if (string == "") {
-    console.log(counter);
-  } else {
-    console.log(string);
-  };
+  string == "" ? console.log(counter) : console.log(string);
 };
 
 //Chess Board
@@ -31,6 +29,10 @@ for (i = 0; i < boardSize; i++) {
     } else {
       j % 2 != 0 ? string += " " : string += "#";
     }
+    // if ((x + y) % 2 == 0)
+    //   board += " ";
+    // else
+    //   board += "#";
   };
   string += "\n";
 };
