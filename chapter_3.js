@@ -1,6 +1,9 @@
 //Minimum
 function min(a, b) {
-  return Math.min(a, b);
+  if (a < b) 
+    return a;
+  else
+    return b;
 };
 
 //Recursion
@@ -36,3 +39,7 @@ function countChar(string, char) {
   };
   return counter;
 };
+
+// function countBs(string) {
+//   return countChar(string, "B");
+// }
