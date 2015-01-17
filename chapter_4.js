@@ -92,6 +92,15 @@ function nth(list, index) {
 //     return nth(list.rest, n - 1);
 // }
 
+// Deep Comparison
+function deepEqual(a, b) {
+  if (a.valueOf() == b.valueOf()) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
 
 
 
