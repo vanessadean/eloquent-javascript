@@ -43,3 +43,10 @@ function countChar(string, char) {
 // function countBs(string) {
 //   return countChar(string, "B");
 // }
+
+var string = "JavaScript";
+var newString = "";
+for (i=0; i<string.length; i++){
+  var pop = string.slice(-1);
+  string = pop + string.slice(0,-1);
+}
