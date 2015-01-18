@@ -103,12 +103,10 @@ function deepEqual(a, b) {
   var propsInA = 0, propsInB = 0;
 
   for (var prop in a)
-    console.log(prop);
     propsInA += 1;
 
   for (var prop in b) {
     propsInB += 1;
-    console.log(prop);
     if (!(prop in a) || !deepEqual(a[prop], b[prop]))
       return false;
   }
