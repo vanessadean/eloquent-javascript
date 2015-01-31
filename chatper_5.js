@@ -1,8 +1,8 @@
 // Flattening
 var arrays = [[1, 2, 3], [4, 5], [6]];
-arrays.reduce(function(flat,current){
-  return flat.concat(current);
-},[]);
+arrays.reduce(function(startValue,nextValue){
+  return startValue.concat(nextValue);
+});
 
 // Mother-child age difference
 function average(array) {
@@ -15,10 +15,10 @@ ancestry.forEach(function(person) {
   byName[person.name] = person;
 });
 
-var differences = ancestry.filter(function(person) {
-  return byName[person.mother] != null;
-}).map(function(person) {
-  return person.born - byName[person.mother].born;
+var differences = ancestry.map(function(person) {
+  if (byName[person.mother])
+    console.log(byName[person.mother]);
+    return person.born - byName[person.mother].born;
 });
 
 
@@ -67,3 +67,4 @@ function some(array, test) {
   }
   return false;
 }
+
