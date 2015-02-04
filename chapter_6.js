@@ -55,4 +55,8 @@ StretchCell.prototype.minHeight = function() {
 };
 StretchCell.prototype.draw = function(width, height) {
   return this.inner.draw(width, height);
-};
+}
+
+//Sequence interface
+
+
