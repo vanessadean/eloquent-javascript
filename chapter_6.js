@@ -1,8 +1,12 @@
+// a function is free floating
+// a method is always attached to an object
+
 //A vector type
 
 function Vector(x,y){
   this.x = x;
   this.y = y;
+  this.length = Math.sqrt(Math.pow(this.x,2)+Math.pow(this.y,2));
 }
 
 Vector.prototype.plus = function(vector) {
